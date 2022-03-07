@@ -28,9 +28,12 @@ jobs:
           name: Build the project
           command: npm run build
   testing:
-    - run:
-        name: Run tests
-        command: npm test
+    docker:
+      - image: cimg/node:16.10
+    steps:
+      - run:
+          name: Run tests
+          command: npm test
 
 workflows:
   # Below is the definition of your workflow.
