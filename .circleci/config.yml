@@ -22,7 +22,7 @@ jobs:
       - run:
           name: testing the project
           command: npm run build
-# workflows:
-#   sample:
-#     jobs:
-#       - build-test-deploy
+workflows:
+  sample:
+    jobs:
+      - build-test-deploy
