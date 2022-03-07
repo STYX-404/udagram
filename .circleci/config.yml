@@ -26,6 +26,9 @@ jobs:
       - run:
           name: deploying frontend
           command: npm run deploy:frontend
+      run:
+          name: deploying backend
+          command: npm run deploy:backend
 workflows:
   sample:
     jobs:
