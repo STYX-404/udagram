@@ -13,6 +13,7 @@ jobs:
     steps:
       - node/install
       - aws-cli/setup
+      - eb/setup
       - checkout
       - run:
           name: installing dependencies
