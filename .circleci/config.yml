@@ -12,6 +12,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - node/install
+      - aws-cli/setup
       - checkout
       - run:
           name: installing dependencies
