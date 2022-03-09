@@ -8,6 +8,7 @@ POSTGRES_DB="postgres"
 PORT_DB="5432" 
 PORT="8080"
 POSTGRES_HOST="database-2.cyqd2cjlcqmu.us-east-1.rds.amazonaws.com" 
-AWS_REGION="us-east-1"
+AWS_REGION="us-east-1" 
+AWS_BUCKET="my-284073646289-bucket" 
 JWT_SECRET="this is a secret"
 eb deploy
