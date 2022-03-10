@@ -31,10 +31,10 @@ jobs:
           name: deploying backend
           command: npm run deploy:backend
 workflows:
-  sample:
+  build_test_deploy:
     jobs:
-      - build
+      - build:
           filters:
-              branches:
-                only:
-                  - master
+            branches:
+              only:
+                - master
