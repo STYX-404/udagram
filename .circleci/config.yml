@@ -34,3 +34,6 @@ workflows:
   sample:
     jobs:
       - build
+          filters:
+                branches:
+                  only: main
